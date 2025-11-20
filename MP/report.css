@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+}
+header {
+  background: #272961;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 20px;
+}
+#projectTitle {
+  font-size: 1.6em;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+#navReport {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin-right: 160px;
+  transition: background-color 0.3s ease;
+}
+#navReport:hover {
+  color: #c2af4d;
+  padding: 8px;
+}
+main {
+  max-width: 480px;
+  margin: 30px auto 40px;
+  padding: 0 20px;
+}
+section {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #3b378033;
+}
+label,
+input,
+select,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #b5b5b5;
+  font-family: inherit;
+}
+button {
+  background: #272961;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #1e2a78;
+}
+#formMsg {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mahila Suraksha Nyayavani</title>
+  <link rel="stylesheet" href="report.css" />
+</head>
+<body>
+  <header>
+    <div id="projectTitle">Mahila Suraksha Nyayavani</div>
+    <a id="navReport" href="ereport.html">Report a Crime</a>
+  </header>
+
+  <main>
+    <section id="report">
+      <h2 id="reportTitle">Crime Reporting Form</h2>
+      <form id="crimeForm" enctype="multipart/form-data">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required autocomplete="name" />
+
+        <label for="contact">Email or Phone Number</label>
+        <input type="text" id="contact"  required autocomplete="email" />
+
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option value="digital">Digital Violence</option>
+          <option value="emotional">Emotional Violence</option>
+          <option value="physical">Physical Violence</option>
+        </select>
+
+        <label for="location">Location</label>
+        <input type="text" id="location" required autocomplete="off" />
+
+        <label for="incident">Describe the incident</label>
+        <textarea id="incident" rows="4" required></textarea>
+
+        <label for="evidence">Upload Evidence (images/documents, optional)</label>
+        <input type="file" id="evidence" accept="image/*,application/pdf" multiple />
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('crimeForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('formMsg').innerText =
+        'Report submitted successfully. Authorities will contact you soon.';
+      this.reset();
+    });
+  </script>
+</body>
+</html>

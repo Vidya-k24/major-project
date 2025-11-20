@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahila Suraksha Nyayavani - Chatbot</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f9; }
+    .chat-container { width: 400px; margin: 30px auto; background: #fff; border-radius: 12px; 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: flex; flex-direction: column; }
+    .chat-header { background: #8e44ad; color: #fff; padding: 12px; border-radius: 12px 12px 0 0; text-align: center; }
+    .chat-body { padding: 10px; height: 400px; overflow-y: auto; }
+    .chat-message { margin: 8px 0; padding: 10px; border-radius: 8px; max-width: 75%; }
+    .user-message { background: #d1e7dd; align-self: flex-end; }
+    .bot-message { background: #f8d7da; align-self: flex-start; }
+    .chat-footer { display: flex; padding: 10px; border-top: 1px solid #ccc; }
+    .chat-footer input { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 8px; }
+    .chat-footer button { margin-left: 8px; padding: 8px 12px; background: #8e44ad; color: #fff; border: none; border-radius: 8px; cursor: pointer; }
+    .suggestions { padding: 8px; border-top: 1px solid #eee; background: #fafafa; }
+    .suggestions button { margin: 3px; padding: 6px 10px; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-header">💬Nyayavani Chatbot</div>
+  <div id="chatBody" class="chat-body"></div>
+  <div class="suggestions">
+    <button onclick="quickAsk('helplines')">Helplines</button>
+    <button onclick="quickAsk('report a crime')">Report a Crime</button>
+    <button onclick="quickAsk('laws')">Laws</button>
+    <button onclick="quickAsk('self defense')">Self Defense</button>
+  </div>
+  <div class="chat-footer">
+    <input type="text" id="userInput" placeholder="Type your question..."/>
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script>
+  // Knowledge Base with variations
+  const knowledgeBase = [
+    {
+      keywords: ["hi","hello","hey","hlo","good morning","how can u assisst me","good afternoon","namaste","hi bot","who are you","what can you do","about yourself","how can u help me"],
+      answer: "Hello! I’m here to help you with women’s safety, harassment, laws, and helplines. How can I assist you today?"
+    },
+    {
+      keywords: ["what is mahila suraksha nyayavani","features","how this website is useful","usefulness","about this website","about the website","about website","website","project info","nyayavani","platform do","women safety site","is this government website","why created"],
+      answer: "Mahila Suraksha Nyayavani is a women’s safety and crime reporting platform. It helps report crimes, learn self-defense, and access legal support."
+    },
+    {
+      keywords: ["types of violence","violence categories","kinds of violence","domestic violence","article topics","digital harassment","physical harassment"],
+      answer: "We cover emotional, digital, and physical violence with detailed articles and resources."
+    },
+    {
+      keywords: ["report a crime","file complaint","report harassment","submit case","lodge complaint","report assault","file fir","report domestic violence"],
+      answer: "Go to the 'Report a Crime' section, fill out the form, and submit it. Your report will be forwarded to the police."
+    },
+    {
+      keywords: ["is my information safe","data shared","website secure","hide my name","report anonymously","privacy","identity hidden","confidential"],
+      answer: "Yes, your details are kept confidential and only accessible to the police."
+    },
+    {
+      keywords: ["helpline","emergency","helplines","police number","women helpline","child helpline","ncw contact","danger number"],
+      answer: "Emergency: 112, Police: 100, Women Helpline: 181, Domestic Violence: 1091, Child Helpline: 1098, NCW WhatsApp: 7827170170."
+    },
+    {
+      keywords: ["self defense","learn self defense","safety tips","protect myself","teach self defense","fight back","safety tricks","self protection","defend myself","actions to take during violence","actions to take during crime","defend"],
+      answer: "Visit the Self-defense Videos tab for step-by-step guidance. Carry pepper spray, whistle, or learn basic techniques."
+    },
+    {
+      keywords: ["digital harassment","what is digital violence","define digital violence","digital harassment","online harassment","cyberbullying","internet threats","online stalking","harassment on instagram","report cyber crime","social media abuse"],
+      answer: "Digital harassment includes stalking, cyberbullying, and threats online. Use privacy settings, avoid unknown links, and report abuse."
+    },
+    {
+      keywords: ["emotional abuse","emotional harassment","define emotional violence","what is emotional violence","mental abuse","verbal harassment","controlling behavior","family torture","emotional manipulation"],
+      answer: "Emotional abuse includes constant insults, control, and threats. If you feel unsafe or manipulated, it may be abuse."
+    },
+    {
+      keywords: ["physical violence","what is physical violence","define physical violence","physical abuse","domestic violence","husband hits","partner slaps","forced confinement","signs of violence"],
+      answer: "Hitting, slapping, choking, or forced confinement are signs of physical violence."
+    },
+    {
+      keywords: ["laws","women protection laws","ipc sections","ipc 354","ipc 509","posh act","domestic violence act","legal rights"],
+      answer: "Indian laws like IPC Sections 354, 509, 498A, the POSH Act, and Domestic Violence Act protect women from harassment."
+    },
+    {
+      keywords: ["stalking","being followed","someone stalking","is stalking crime","report stalking","law for stalking","ipc section stalking"],
+      answer: "You can report stalking to police; IPC Section 354D ensures legal action."
+    },
+    {
+      keywords: ["counseling","talk to counselor","free legal advice","women ngo","support groups","social workers","legal aid cell"],
+      answer: "You can connect with our listed women’s legal aid cells, NGOs, and helplines for counseling support."
+    },
+    {
+      keywords: ["login","user login","police login","how to login","change language","use kannada","reset password","forgot password","where are articles","self defense tab"],
+      answer: "You can log in as a user or police officer using credentials. Language switching is available for English and Kannada. You can reset your password via 'Forgot Password'."
+    }
+  ];
+
+  // Quick suggestion button click
+  function quickAsk(text) {
+    document.getElementById("userInput").value = text;
+    sendMessage();
+  }
+
+  // Chat message handling
+  function sendMessage() {
+    const inputField = document.getElementById("userInput");
+    const chatBody = document.getElementById("chatBody");
+    const userTextRaw = inputField.value.trim();
+    const userText = userTextRaw.toLowerCase();
+    if (!userText) return;
+
+    // Display user message
+    chatBody.innerHTML += `<div class="chat-message user-message">${userTextRaw}</div>`;
+
+    // Default response
+    let response = "❌ Sorry, I don't have an answer for that. Try asking about 'helplines', 'laws', or 'report crime'.";
+
+    // Search knowledge base
+    for (let item of knowledgeBase) {
+      for (let keyword of item.keywords) {
+        if (userText.includes(keyword.toLowerCase())) {
+          response = item.answer;
+          break;
+        }
+      }
+      if (response !== "❌ Sorry, I don't have an answer for that. Try asking about 'helplines', 'laws', or 'report crime'.") break;
+    }
+
+    // Display bot message
+    chatBody.innerHTML += `<div class="chat-message bot-message">${response}</div>`;
+    chatBody.scrollTop = chatBody.scrollHeight;
+
+    inputField.value = "";
+  }
+</script>
+</body>
+</html>

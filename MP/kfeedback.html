@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಪ್ರತಿಕ್ರಿಯೆ - ಮಹಿಳಾ ಸುರಕ್ಷಾ ನ್ಯಾಯವಾಣಿ</title>
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+  <header>
+    <h1>ಮಹಿಳಾ ಸುರಕ್ಷಾ ನ್ಯಾಯವಾಣಿ</h1>
+    <nav>
+      <a href="khome.html">ಮುಖಪುಟ</a>
+      <a href="karticle.html">ಲೇಖನಗಳು</a>
+      <a href="kaboutus.html">ನಮ್ಮ ಬಗ್ಗೆ</a>
+      <a href="kvideos.html">ಸ್ವಯಂ ರಕ್ಷಣಾ</a>
+      <a href="kcontact.html">ಸಂಪರ್ಕ</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form class="feedback-form" onsubmit="event.preventDefault(); alert('ನಿಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಧನ್ಯವಾದಗಳು!');">
+      <h2>ಪ್ರತಿಕ್ರಿಯೆ ಫಾರ್ಮ್</h2>
+
+      <label for="name">ಹೆಸರು:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">ಇಮೇಲ್:</label>
+      <input type="email" id="email" required>
+
+      <label for="rating">ನಮ್ಮನ್ನು ರೇಟ್ ಮಾಡಿ:</label>
+      <select id="rating">
+        <option>⭐</option>
+        <option>⭐⭐</option>
+        <option>⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐⭐</option>
+      </select>
+
+      <label for="message">ನಿಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆ:</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">ಸಲ್ಲಿಸು</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 ಮಹಿಳಾ ಸುರಕ್ಷಾ ನ್ಯಾಯವಾಣಿ | ನಿಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ನಾವು ಮೌಲ್ಯಮಾಪನ ಮಾಡುತ್ತೇವೆ</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Mahila Suraksha Nyayavani</title>
+  <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mahila Suraksha Nyayavani</h1>
+  </header>
+
+  <div class="container">
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> support@nyayavani.org</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong> Women Safety Cell, Bengaluru, Karnataka, India</p>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..."></iframe>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send us a Message</h2>
+      <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.'); this.reset();">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Mahila Suraksha Nyayavani. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

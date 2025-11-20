@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Harassment Videos</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            margin: 0;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #222;
+            font-size: 2.2em;
+            animation: slideDown 1s ease;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 20px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .video-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: zoomIn 0.8s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            /* Responsive video */
+            border-radius: 10px;
+            border: none;
+        }
+
+        h3 {
+            margin: 12px 0 5px;
+            font-size: 1rem;
+            color: #444;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .video-card {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🎥 Awareness Through Real Stories</h1>
+
+    <div class="video-grid">
+
+
+        <!-- Video 1 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/CaPaK6Pwl4w" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/2-HomdQWCP4"
+                title="Domestic abuse survivor opens up on her traumatic past" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/DCK-LfANmXQ"
+                title="A woman was assaulted in broad daylight in Uttar Pradesh’s Meerut. Here’s what happened…"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+        <!-- Video 4-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/Iu8-FBZv8No?si=v_H4cQX7Tgam6zaY" title="Harassment story by Shivani"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 5-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/GVG5zso4O-A?si=Qw2el2QxDflvDBjx"
+                title="Auto driver slaps women for cancelling ride in Bengaluru" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 6-->
+        <!-- <div class="video-card">
+       <iframe  src="https://youtube.com/shorts/hnnwzVxqjTE?si=C1-u9opDSF3jC8bi" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div> -->
+
+        <!-- Video 7-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/hnnwzVxqjTE?si=C1-u9opDSF3jC8bi"
+                title="Narration of commenting by a women by Nagalakshmi Chowdary" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 8 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/FdRjVxgpZXw?si=oNd1PyCmlmmzl3kE"
+                title="IAS Savita Pradhan real incident by Josh Talks" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 9-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/8shB2j6q7Do?si=B53l7TBiWWZZdLrK" title="Acid attack survivor:Roopa"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 10 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/GuG2gWhuRWM?si=Ew0fxvAYNPS8otHS"
+                title="Lakshmi wins fight against acid attackers" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 11-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/TPvsxUSMDPA?si=DlW_EEOkj0BmDioK"
+                title="Domestic Abuse survivors horrifying story" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 12 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/hTGwFiplK2g?si=fslZGAg9mbzTmgRj"
+                title="Emotional Motivation by Josh talks from Priya" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 13-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/9oY1tAtNhUU?si=GEgJ4-qcqI9i-5qu"
+                title="Forensic Explained:The Sharadha walker case" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 14 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/PbXJwzjsmMI?si=xPoL0GgpYG9ZCGtP"
+                title="Nirbhaya ki Maa Asha Devi" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 15-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/0cNwTF-z9rI?si=Grr0xaazXoK4l0YQ"
+                title="Nagalakshmi rising her voice against violences" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 16-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/dBZfo0RehUA?si=M2A9aH8G2j0xD1K7"
+                title="Singer Chinmayi lists issues with reporting sexual harassment" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 17 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/DCK-LfANmXQ?si=X87S0WQqNVgIkkpU"
+                title="A woman was assaulted in broad daylight in Uttar Pradesh’s Meerut. Here’s what happened…"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 18 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/O65xLY6L8_c?si=Wq0vLKNMA9dZleJV" title="Bad stouch in a shop"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 19 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/grynxcFl7Us?si=tSXOEFarRkZND2Nq"
+                title="This woman stood up against harassment on a Pune bus" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 20-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/eLu8okPz600?si=GThA4Jnul7UVe3mu" title="Sexually assaulted at 12!"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 21 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/ldh7umXOIM8" title="Doctor Murdered by In-Laws in Karnataka"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 22-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/rSxo1YT86cw" title="Violence against Women in India:will it end?"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 23 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/LH_FO0d37TY" title="Karnataka Gangrape Shocker" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 24-->
+        <div class="video-card">
+            <iframe src="https://youtube.com/embed/-jnD8lQmltA" title="For 11 years,her father sexually assaulted her"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- Video 25 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/VDuN9n0m6IU"
+                title="Israeli Women Raped in Karnataka; Male Tourists Attacked, Pushed to Canal; 1 Dead"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 26 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/ytbDmZboYmA"
+                title="Karnataka Horror: 15-year-old Gang-Raped, Blackmailed with Video in Belagavi" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 27 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/SNjA8HIFiOk" title="Reality of a women in India" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+
+
+        <!-- Video 28 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/BeHPL1o-NNE"
+                title="Former JD(S) MP Prajwal Revanna Sentenced To Life Imprisonment In Rape Case" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 29 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/S2IOJDE0vwI" title="Nirbhaya Gang Rape & Murder" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 30 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/JqI6Xd6TMkM"
+                title="Life of SexWorkers: Prostitution, Human Trafficking & Forced Sex" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 31 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/nuMtHmh2w5s"
+                title="Women Allege Rider Masturbated Mid-Ride, Rapido Riders Alleged Harassment" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <p>
+                If the video doesn’t play, <a href="https://youtu.be/nuMtHmh2w5s" target="_blank">watch on YouTube</a>.
+            </p>
+        </div>
+
+        <!-- Video 32 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/WMZQ0FHr3AY"
+                title="Gorakpur Murder Case: Man Shoots wife dead in photo studio" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <p>
+                If the video doesn’t play, <a href="https://youtu.be/WMZQ0FHr3AY" target="_blank">watch on YouTube</a>.
+            </p>
+        </div>
+
+
+        <!-- Video 33 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/hJmoG0A-jpE"
+                title="Shocking Bengaluru College Assault: Lectures Arrested for Sexual Abuse & Blackmail"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 34 -->
+        <div class="video-card">
+            <iframe
+                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D671298360662966&show_text=false&width=560"
+                style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+        </div>
+        <!-- Keep adding up to 20+ -->
+    </div>
+</body>
+
+</html>

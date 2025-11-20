@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Mahila Suraksha Nyayavani</title>
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+  <header>
+    <h1>Mahila Suraksha Nyayavani</h1>
+    <nav>
+      <a href="ehome.html">Home</a>
+      <a href="earticle.html">Articles</a>
+      <a href="eaboutus.html">About Us</a>
+      <a href="evideos.html">Self Defense</a>
+      <a href="econtact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form class="feedback-form" onsubmit="event.preventDefault(); alert('Thank you for your feedback!');">
+      <h2>Feedback Form</h2>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="rating">Rate Us:</label>
+      <select id="rating">
+        <option>⭐</option>
+        <option>⭐⭐</option>
+        <option>⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐⭐</option>
+      </select>
+
+      <label for="message">Your Feedback:</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 Mahila Suraksha Nyayavani | We value your feedback</p>
+  </footer>
+</body>
+</html>

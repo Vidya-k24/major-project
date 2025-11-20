@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Physical Violence Articles</title>
+  <style>
+    :root{
+      --card-height:220px;
+      --overlay: rgba(0,0,0,0.55);
+      --accent: rgba(255,255,255,0.18);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: url('https://images.unsplash.com/photo-1593113598332-e924c59d1f57') center/cover fixed no-repeat;
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    header{
+      background: rgba(0,0,0,0.75);
+      padding:18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    header h1{ margin:0; font-size:20px; letter-spacing:0.3px; }
+
+    .wrap{
+      max-width:1400px;
+      margin:28px auto;
+      padding:0 18px 60px;
+    }
+
+    .articles{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+      grid-template-rows: 230px;
+      gap:20px;
+    }
+
+    .card{
+      height:var(--card-height);
+      border-radius:14px;
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      align-items:flex-end;
+      padding:16px;
+      color:#fff;
+      box-shadow:0 8px 20px rgba(0,0,0,0.45);
+      transition:transform .25s ease, box-shadow .25s ease;
+      background-size:cover;
+      background-position:center;
+    }
+    .card:hover{ transform:translateY(-6px); box-shadow:0 14px 30px rgba(0,0,0,0.55); }
+
+    .card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:var(--overlay);
+      z-index:0;
+    }
+
+    .card-content{
+      position:relative;
+      z-index:1;
+      width:100%;
+    }
+
+    .desc{
+      margin:0 0 10px 0;
+      font-size:14px;
+      line-height:1.4;
+      display:-webkit-box;
+      -webkit-line-clamp:3;
+      -webkit-box-orient:vertical;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .read-more{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:8px;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      font-size:13px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .read-more:hover{ background:rgba(255,255,255,0.28); }
+
+    @media (max-width:520px){
+      header h1{ font-size:18px }
+      .desc{ font-size:13px }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Physical Violence Articles</h1>
+  </header>
+
+  <div class="wrap">
+    <div class="articles">
+      <!-- Article 1 -->
+      <div class="card" style="background-image:url('images/p1.jpg');">
+        <div class="card-content">
+          <p class="desc">Suryanelli rape case</p>
+          <a class="read-more" href="https://share.google/1FR7eqLxVDNVcJQCh">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="card" style="background-image:url('https://www.livemint.com/lm-img/img/2025/02/08/600x338/Delhi_school_girl_1739025400817_1739025406806.png');">
+        <div class="card-content">
+          <p class="desc">Delhi: 5-year-old child suffers sexual abuse; police not allowed to take any action against the accused, here’s why</p>
+          <a class="read-more" href="https://www.livemint.com/news/india/delhi-5-year-old-child-suffers-sexual-abuse-police-not-allowed-to-take-any-action-against-the-accused-here-s-why-11739024718678.html">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="card" style="background-image:url('images/p3.jpg');">
+        <div class="card-content">
+          <p class="desc">40-Year-Old Women alleges Sexual assault At Delhi Govt Hospital, Accused arrested</p>
+          <a class="read-more" href="https://medicaldialogues.in/news/health/hospital-diagnostics/40-year-old-woman-alleges-sexual-assault-at-delhi-govt-hospital-accused-arrested-110997">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 4 -->
+      <div class="card" style="background-image:url('images/p4.jpg');">
+        <div class="card-content">
+          <p class="desc">Woman Dies After Sexual Assault By Male Patient In Delhi Hospital.</p>
+          <a class="read-more" href="https://www.ndtv.com/delhi-news/hospital-horrors-woman-dies-after-sexual-assault-by-male-patient-in-delhi-hospital-8765653">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 5 -->
+      <div class="card" style="background-image:url('https://c.ndtvimg.com/2024-02/80ef0ba_delhi-police-generic_625x300_04_February_24.jpeg?im=FeatureCrop,algorithm=dnn,width=773,height=435');">
+        <div class="card-content">
+          <p class="desc">5-Year-Old Girl Allegedly Sexually Assaulted By Foreign Student In Delhi.</p>
+          <a class="read-more" href="https://www.ndtv.com/india-news/5-year-old-girl-allegedly-sexually-assaulted-by-foreign-student-in-delhi-7659180">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 6 -->
+      <div class="card" style="background-image:url('https://th-i.thgim.com/public/incoming/18i75a/article70022666.ece/alternates/LANDSCAPE_660/iStock-1360341752.jpg');">
+        <div class="card-content">
+          <p class="desc">Woman alleges gang rape at house in South Kolkata</p>
+          <a class="read-more" href="https://www.thehindu.com/news/cities/kolkata/two-friends-allegedly-rape-woman-in-kolkatas-haridevpur/article70022249.ece">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 7 -->
+      <div class="card" style="background-image:url('https://miro.medium.com/max/7200/1*YgmFH1am9o1EwLk_D1MOZg.jpeg');">
+        <div class="card-content">
+          <p class="desc">The History Behind Sexual Harassment at the Workplace Law</p>
+          <a class="read-more" href="https://nyaaya.org/guest-blog/the-history-behind-sexual-harassment-at-the-workplace-law/">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 8 -->
+      <div class="card" style="background-image:url('https://ichef.bbci.co.uk/news/1024/cpsprodpb/5B22/production/_99803332_gettyimages-493198830.jpg.webp');">
+        <div class="card-content">
+          <p class="desc">India outcry after eight-month-old baby raped</p>
+          <a class="read-more" href="https://www.bbc.com/news/world-asia-india-42869010">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 9 -->
+      <div class="card" style="background-image:url('https://ichef.bbci.co.uk/news/1024/cpsprodpb/7420/production/_127882792_ashadeviprotestforexecution.jpg.webp');">
+        <div class="card-content">
+          <p class="desc">Nirbhaya 10 years on: The lives the Delhi gang rape changed</p>
+          <a class="read-more" href="https://bbc.com/news/world-63817388">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 10 -->
+      <div class="card" style="background-image:url('https://th-i.thgim.com/public/incoming/kpwdqc/article69947531.ece/alternates/LANDSCAPE_660/CCI_UDHindu_KSL_UP33R0EOL_R1524070104_2_35e561c4-7813-4489-9919-75ef61317886.jpg');">
+        <div class="card-content">
+          <p class="desc">Bengaluru police book former U.P. MLA for sexual assault on woman in city hotel</p>
+          <a class="read-more" href="https://www.thehindu.com/news/cities/bangalore/bengaluru-police-book-former-up-mla-for-sexual-assault-on-woman-in-city-hotel/article69947138.ece">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 11 -->
+       <div class="card" style="background-image:url('images/p11.jpg');">
+        <div class="card-content">
+          <p class="desc">Woman Sexually Harassed By A Biker In Bengaluru</p>
+          <a class="read-more" href="https://www.ndtv.com/bangalore-news/woman-sexually-harassed-by-a-biker-in-bengaluru-8311527">Read More</a>
+        </div>
+      </div>
+
+   <!-- Article 12 -->
+      <div class="card" style="background-image:url('images/p12.jpg');">
+        <div class="card-content">
+          <p class="desc">IPS Officer's Children Sexually Harassed During IPL Match In Bengaluru, FIR Registered</p>
+          <a class="read-more" href="https://www.ndtv.com/bangalore-news/ips-officers-children-sexually-harassed-during-ipl-match-in-bengaluru-fir-registered-8342122">Read More</a>
+        </div>
+      </div>
+
+         <!-- Article 13 -->
+      <div class="card" style="background-image:url('https://c.ndtvimg.com/2025-08/3btntdc_bengaluru-pg_625x300_31_August_25.jpg?im=FeatureCrop,algorithm=dnn,width=773,height=435');">
+        <div class="card-content">
+          <p class="desc">Woman Sexually Harassed, Looted Of Cash By Masked Man In Bengaluru PG</p>
+          <a class="read-more" href="https://www.ndtv.com/bangalore-news/masked-man-sexually-harass-woman-loot-cash-in-bengaluru-paying-guest-9191337">Read More</a>
+        </div>
+      </div>
+
+        <!-- Article 14 -->
+      <div class="card" style="background-image:url('https://media.cnn.com/api/v1/images/stellar/prod/ap25067524758861.jpg?c=16x9&q=h_653,w_1160,c_fill/f_avif');">
+        <div class="card-content">
+          <p class="desc">An Israeli woman and homestay host were gang raped in southern India, police say</p>
+          <a class="read-more" href="https://share.google/ynENSSEbaGjyarPEO">Read More</a>
+        </div>
+      </div>
+
+        <!-- Article 15 -->
+      <div class="card" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14_RJ8gEgZZ-Z5ADfpTquKhUkbWIl1_jHUA&s');">
+        <div class="card-content">
+          <p class="desc">Mentally challenged woman gang-raped in Karnataka’s Hassan</p>
+          <a class="read-more" href="https://share.google/dsQQPwVHhEa1H4SCd">Read More</a>
+        </div>
+      </div>
+
+        <!-- Article 16 -->
+      <div class="card" style="background-image:url('https://tse2.mm.bing.net/th/id/OIP.-2YU5IqMM4GyYbbG7PMcEgHaE6?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">MBA graduate arrested in Bengaluru sexual assault case</p>
+          <a class="read-more" href="https://www.thehindu.com/news/national/karnataka/mba-graduate-arrested-in-marathahalli-sexual-assault-case/article69537812.ece">Read More</a>
+        </div>
+      </div>
+
+        <!-- Article 17 -->
+      <div class="card" style="background-image:url('https://static.toiimg.com/thumb/msid-91329763,imgsize-12188,width-400,height-225,resizemode-72/91329763.jpg');">
+        <div class="card-content">
+          <p class="desc">Since Jan 2019, 16 women fell prey to acid attacks in karnataka</p>
+          <a class="read-more" href="https://timesofindia.indiatimes.com/city/bengaluru/since-jan-2019-16-women-fell-prey-to-acid-attacks-in-karnataka/articleshow/91329758.cms">Read More</a>
+        </div>
+      </div>
+
+        <!-- Article 18 -->
+      <div class="card" style="background-image:url('https://tse3.mm.bing.net/th/id/OIP.C9hO4oVCO0xqLXgVoZUl_QHaEB?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Stalker attacks 24-year-old woman with acid</p>
+          <a class="read-more" href="https://www.thehindu.com/news/national/karnataka/stalker-attacks-24-year-old-woman-with-acid/article65363226.ece">Read More</a>
+        </div>
+      </div>
+
+        <!-- Article 19 -->
+      <div class="card" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.IkeKfb6iv1QU4AI6RBlrGgHaEK?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Karnataka Man Arrested For Acid Attack On Daughter, Niece</p>
+          <a class="read-more" href="https://www.ndtv.com/india-news/man-arrested-in-kasaragod-for-acid-attack-on-daughter-niece-9233177">Read More</a>
+        </div>
+      </div>
+
+        <!-- Article 20 -->
+      <div class="card" style="background-image:url('https://media.assettype.com/homegrown%2Fimport%2Fimg%2Fbook%2Fswbboupwce-1512374116.jpg?w=1024&auto=format%2Ccompress&fit=max');">
+        <div class="card-content">
+          <p class="desc">5 Indian Women Share Their Experiences With Filing Sexual Harassment Cases</p>
+          <a class="read-more" href="https://homegrown.co.in/homegrown-explore/5-indian-women-share-their-experiences-with-filing-sexual-harassment-cases">Read More</a>
+        </div>
+      </div>
+
+        <!-- Article 21 -->
+      <div class="card" style="background-image:url('https://thelogicalindian.com/wp-content/uploads/2025/07/Web-Featured-Image-15.jpg');">
+        <div class="card-content">
+          <p class="desc">Karnataka: 18-Year-Old Woman Attacked with Toilet Acid by Relative After Rejecting Marriage Proposal; Accused Dies by Self-Immolation</p>
+          <a class="read-more" href="https://thelogicalindian.com/karnataka-18-year-old-woman-attacked-with-toilet-acid-by-relative-after-rejecting-marriage-proposal-accused-dies-by-self-immolation/">Read More</a>
+        </div>
+      </div>
+
+        <!-- Article 22 -->
+      <div class="card" style="background-image:url('https://res.cloudinary.com/digicomm/image/upload/t_square-medium/news-magazine/2024/_assets/acid-attacks-acid-attacks.jpg');">
+        <div class="card-content">
+          <p class="desc">Indian women’s stories of violence and ultimate resilience touch business students, professor</p>
+          <a class="read-more" href="https://news.fiu.edu/2024/indian-womens-stories-of-violence-and-ultimate-resilience-touch-business-students-professor">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 23 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1psazr.img?w=768&h=432&m=6');">
+        <div class="card-content">
+          <p class="desc">Dowry Deaths In India: A Modern Curse Rooted In Greed And Patriarchy</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/dowry-deaths-in-india-a-modern-curse-rooted-in-greed-and-patriarchy/ar-AA1LZjmM">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 24 -->
+      <div class="card" style="background-image:url('https://tse1.mm.bing.net/th/id/OIP.hvxIl5ldidlEx1nvgR2HBgHaEK?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Three girls injured in acid attack by stalker in Karnataka</p>
+          <a class="read-more" href="https://www.hindustantimes.com/cities/bengaluru-news/three-girls-injured-in-acid-attack-by-stalker-in-karnataka-101709580165363.html">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 25 -->
+      <div class="card" style="background-image:url('https://images.indianexpress.com/2021/07/jail-file.jpg?w=640');">
+        <div class="card-content">
+          <p class="desc">Karnataka: Four sentenced to life imprisonment for acid attack on woman</p>
+          <a class="read-more" href="https://indianexpress.com/article/india/karnataka-life-imprisonment-acid-attack-woman-7406420/">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 26 -->
+      <div class="card" style="background-image:url('https://tse3.mm.bing.net/th/id/OIP.hutNj7XQttmmwvG5e-ZJJAHaEK?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Aligarh Shocker: Woman Jumps From Terrace After Dowry Harassment, Beaten By In-Laws While Unconscious</p>
+          <a class="read-more" href="https://zeenews.india.com/india/aligarh-shocker-woman-jumps-from-terrace-after-dowry-harassment-beaten-by-in-laws-while-unconscious-2955971.html">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 27 -->
+      <div class="card" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.gUOgJF1yuxajy1O3ucjwSwHaED?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Married woman killed for dowry in Kaushambi, 6 booked: Police</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/married-woman-killed-for-dowry-in-kaushambi-6-booked-police/ar-AA1M3mte?ocid=BingNewsVerp">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 28 -->
+      <div class="card" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.dqT2NWjKR0X8zn_CqJMgLQHaDy?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Pune: Case filed against musical members for harassing women reporters</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/pune-case-filed-against-musical-members-for-harassing-women-reporters/ar-AA1M7vjS?ocid=BingNewsVerp">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 29 -->
+      <div class="card" style="background-image:url('https://tse2.mm.bing.net/th/id/OIP.fymBnbUjrRJm_gT1qYycjgHaE_?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Dalit woman gang-raped, her fiance assaulted in Madhya Pradesh, 3 arrested</p>
+          <a class="read-more" href="https://www.indiatoday.in/india/story/madhya-pradesh-sidhi-gang-rape-mp-police-churhat-sexual-harassment-2767549-2025-08-07">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 30 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1M7nKm.img?w=612&h=344&m=6');">
+        <div class="card-content">
+          <p class="desc">Bengaluru Woman Sexually Harassed, Robbed by Knife-Wielding Stranger at PG; Flees With Money</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/bengaluru-woman-sexually-harassed-robbed-by-knife-wielding-stranger-at-pg-flees-with-money/ar-AA1LC7a5?ocid=BingNewsVerp">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 31 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1LswYW.img?w=612&h=344&m=6&x=259&y=87&s=105&d=105');">
+        <div class="card-content">
+          <p class="desc">UP woman forced to drink acid by in-laws over dowry, dies after 17 days</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/up-woman-forced-to-drink-acid-by-in-laws-over-dowry-dies-after-17-days/ar-AA1Lszxt?ocid=BingNewsVerp">Read More</a>
+        </div>
+      </div>
+      
+       <!-- Article 31 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1HBYSS.img?w=768&h=468&m=6');">
+        <div class="card-content">
+          <p class="desc">Bengaluru girl alleges sexual abuse by mother in name of ‘intimacy training’; told it would help post-marriage life with husband</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/bengaluru-girl-alleges-sexual-abuse-by-mother-in-name-of-intimacy-training-told-it-would-help-post-marriage-life-with-husband-probe-on/ar-AA1HC16r">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 32 -->
+      <div class="card" style="background-image:url('https://tse1.mm.bing.net/th/id/OIP.o2bdbDFPs2NeNzKwXFEYCQHaDV?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">60-Year-Old Woman Dies By Suicide Over Loan 'Harassment' In Karnataka; FIR Against 7</p>
+          <a class="read-more" href="https://www.msn.com/en-in/autos/photos/60-year-old-woman-dies-by-suicide-over-loan-harassment-in-karnataka-fir-against-7/ar-AA1xEkXP?ocid=socialshare">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 33 -->
+      <div class="card" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.OGayIKfkgB64cisHZxUWNQHaD4?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Women files sexual harassment complaint against BJP Leader</p>
+          <a class="read-more" href="https://timesofindia.indiatimes.com/city/kochi/woman-files-sexual-harassment-complaint-against-bjp-leader/articleshow/123550972.cms">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 34 -->
+      <div class="card" style="background-image:url('https://thelogicalindian.com/wp-content/uploads/2025/09/Web-Featured-Image-1-5-1024x1024.jpg');">
+        <div class="card-content">
+          <p class="desc">Meerut Man Beaten by Locals for Allegedly Molesting a Student, Police Probe Underway</p>
+          <a class="read-more" href="https://thelogicalindian.com/meerut-man-beaten-by-locals-for-allegedly-molesting-a-student-police-probe-underway/">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 35 -->
+      <div class="card" style="background-image:url('https://assets.telegraphindia.com/telegraph/2025/Sep/1757476100_new-project-2025-09-10t091852-098.jpg');">
+        <div class="card-content">
+          <p class="desc">Odisha Crime Branch files 504-page charge sheet in Balasore student self-immolation case</p>
+          <a class="read-more" href="https://www.telegraphindia.com/india/odisha-crime-branch-files-504-page-charge-sheet-in-balasore-student-self-immolation-case/cid/2122211">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 36 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1zNAmc.img?w=550&h=309&m=6');">
+        <div class="card-content">
+          <p class="desc">Panchkula: Haryana Police SI booked for sexual harassment, suspended</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/panchkula-haryana-police-si-booked-for-sexual-harassment-suspended/ar-AA1zNCM5">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 37 -->
+      <div class="card" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.Ru0BxCEe2L7e2OBGpm_0bwHaE8?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Workplace horror: Bengaluru woman shares SHOCKING incident</p>
+          <a class="read-more" href="https://timesofindia.indiatimes.com/etimes/trending/workplace-horror-bengaluru-woman-shares-shocking-incident-recalls-her-boss-violent-outburst-he-threw-a-mouse-at-my-face-/articleshow/123827988.cms">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 38 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1HBYSS.img?w=768&h=468&m=6');">
+        <div class="card-content">
+          <p class="desc">Bengaluru girl alleges sexual abuse by mother in name of ‘intimacy training’; told it would help post-marriage life with husband; probe on</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/bengaluru-girl-alleges-sexual-abuse-by-mother-in-name-of-intimacy-training-told-it-would-help-post-marriage-life-with-husband-probe-on/ar-AA1HC16r">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 39 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1rmr38.img?w=612&h=344&m=6&x=324&y=169&s=689&d=461');">
+        <div class="card-content">
+          <p class="desc">She traps wealthy men...': Jani Master's wife accuses woman complainant who filed sexual assault case against the Pushpa choreographer</p>
+          <a class="read-more" href="https://www.msn.com/en-in/lifestyle/relationships/she-traps-wealthy-men-jani-masters-wife-accuses-woman-complainant-who-filed-sexual-assault-case-against-the-pushpa-choreographer/ar-AA1rmfIb">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 40 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1xYOPK.img?w=612&h=344&m=6&x=177&y=61&s=180&d=180');">
+        <div class="card-content">
+          <p class="desc">Filmmaker Sanal Kumar Sasidharan Detained At Mumbai Airport In Harassment Case, Claims He Wasn't Given Food Or Water</p>
+          <a class="read-more" href="https://www.msn.com/en-in/entertainment/bollywood/filmmaker-sanal-kumar-sasidharan-detained-at-mumbai-airport-in-harassment-case-claims-he-wasnt-given-food-or-water/ar-AA1M2TGl">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 41 -->
+      <div class="card" style="background-image:url('https://tse1.mm.bing.net/th/id/OIP.EnHlE7pq19owfwq4aHXQ6AHaEK?pid=Api&rs=1&c=1&qlt=95&w=204&h=114');">
+        <div class="card-content">
+          <p class="desc">Sexual Harassment Case Involving para Swimming Coach</p>
+          <a class="read-more" href="https://www.bernama.com/en/news.php?id=2284323">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 42 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1qGYFU.img?w=612&h=344&m=6&x=461&y=217&s=272&d=272');">
+        <div class="card-content">
+          <p class="desc">AP government suspends three senior IPS officers for harassing actress Kadambari Jethwani</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/ap-government-suspends-three-senior-ips-officers-for-harassing-actress-kadambari-jethwani/ar-AA1qGPYf">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 43 -->
+      <div class="card" style="background-image:url('https://static.toiimg.com/thumb/msid-117624262,imgsize-97210,width-400,height-225,resizemode-72/man-accused-of-sexual-harassment-case-registered.jpg');">
+        <div class="card-content">
+          <p class="desc">Man Accused Of sexual harssment Case Registered</p>
+          <a class="read-more" href="https://timesofindia.indiatimes.com/city/mangaluru/man-accused-of-sexual-harassment-case-registered/articleshow/123737758.cms">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 44 -->
+      <div class="card" style="background-image:url('https://images.moneycontrol.com/static-mcnews/2025/01/20250107060505_Delhi-HC.png?impolicy=website&width=770&height=431');">
+        <div class="card-content">
+          <p class="desc">Woman going through emotional turmoil 'casually' files sexual harassment case against live-in partner; fined Rs 20,000 by Delhi HC</p>
+          <a class="read-more" href="https://www.moneycontrol.com/news/india/woman-going-through-emotional-turmoil-casually-files-sexual-harassment-case-against-live-in-partner-fined-rs-20-000-by-delhi-hc-13287006.html#google_vignette">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 45 -->
+      <div class="card" style="background-image:url('https://tse1.mm.bing.net/th/id/OIP.IEL4XC3GG7CX8Xaa5t9h8gHaEK?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Man arrested for sexually harassing woman in Chennai</p>
+          <a class="read-more" href="https://www.thehindu.com/news/cities/chennai/man-arrested-for-sexually-harassing-woman-in-chennai/article69874730.ece">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 46 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1pKi3U.img?w=600&h=450&m=6');">
+        <div class="card-content">
+          <p class="desc">Headmaster, teacher held in Class IX student harassment case in Odisha</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/other/headmaster-teacher-held-in-class-ix-student-harassment-case-in-odisha/ar-AA1J2wSY?ocid=socialshare">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 47 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1noXlX.img?w=612&h=344&m=6');">
+        <div class="card-content">
+          <p class="desc">Mumbai: Molestation And Harassment Case Filed Against BEST Depot Managers</p>
+          <a class="read-more" href="https://www.msn.com/en-in/crime/general/mumbai-molestation-and-harassment-case-filed-against-best-depot-managers/ar-BB1rrZvv?ocid=socialshare">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 48 -->
+      <div class="card" style="background-image:url('https://www.mangaloretoday.com/contentfiles/2024/sep/Arrest-10sep25.jpg');">
+        <div class="card-content">
+          <p class="desc">Puttur: Youth arrested for harassing college student</p>
+          <a class="read-more" href="https://www.mangaloretoday.com/main/Puttur-Youth-arrested-for-harassing-college-student.html">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 49 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1wdfr1.img?w=612&h=344&m=6&x=84&y=45&s=601&d=310');">
+        <div class="card-content">
+          <p class="desc">Filed false domestic violence case': Gurugram UX designer alleges harassment from wife asking for Rs 1 cr</p>
+          <a class="read-more" href="https://www.msn.com/en-in/money/topstories/filed-false-domestic-violence-case-gurugram-ux-designer-alleges-harassment-from-wife-asking-for-rs-1-cr/ar-AA1wdaOK?ocid=socialshare">Read More</a>
+        </div>
+      </div>
+
+    <!-- Article 50 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1MisVy.img?w=768&h=432&m=6');">
+        <div class="card-content">
+          <p class="desc">Accused in sex assault of girl, 3, in Welland, Ont., was let out of jail early after 'violent' attack of boy</p>
+          <a class="read-more" href="https://www.msn.com/en-ca/news/canada/accused-in-sexual-assault-of-girl-3-in-welland-ont-was-let-out-of-jail-early-for-violent-attack-of-boy/ar-AA1Miy3E">Read More</a>
+        </div>
+      </div>
+
+         <!-- Article 51 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1Mk3kI.img?w=800&h=435&q=60&m=2&f=jpg');">
+        <div class="card-content">
+          <p class="desc">Security guard claims she didn’t report sexual harassment at outback WA pub due to ‘stigma’</p>
+          <a class="read-more" href="https://www.msn.com/en-au/news/australia/security-guard-claims-she-didn-t-report-sexual-harassment-at-outback-wa-pub-due-to-stigma/ar-AA1Mk9GP?ocid=socialshare">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 52 -->
+      <div class="card" style="background-image:url('https://enewsroom.in/wp-content/uploads/2018/10/metoo.jpg');">
+        <div class="card-content">
+          <p class="desc">How I was sexually harassed by TOI editor and my fight against it</p>
+          <a class="read-more" href="https://enewsroom.in/sexually-harassed-times-of-india-editor-toi-metoo/">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 53 -->
+      <div class="card" style="background-image:url('https://tse3.mm.bing.net/th/id/OIP.EdVJGvef9dPuOy9yII6WqAHaE8?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Times of India sends senior editor KR Sreenivas on leave after #MeToo allegations</p>
+          <a class="read-more" href="https://scroll.in/latest/897617/times-of-india-sends-senior-editor-kr-sreenivas-on-leave-after-metoo-allegations-report">Read More</a>
+        </div>
+      </div>
+
+    <!-- Article 54 -->
+      <div class="card" style="background-image:url('https://c.ndtvimg.com/2021-05/9peonr88_pune-police-generic-twitter-650_625x300_17_May_21.jpg?im=FeatureCrop,algorithm=dnn,width=773,height=435');">
+        <div class="card-content">
+          <p class="desc">Husband Impotent, His Ex-Cop Father Harassed Me To Bear Child: Pune Woman</p>
+          <a class="read-more" href="https://www.ndtv.com/india-news/husband-impotent-his-ex-cop-father-harassed-me-to-bear-child-pune-woman-9261287">Read More</a>
+        </div>
+      </div>
+
+         <!-- Article 55 -->
+      <div class="card" style="background-image:url('https://ichef.bbci.co.uk/ace/standard/624/mcs/media/images/71368000/jpg/_71368592_71368204.jpg.webp');">
+        <div class="card-content">
+          <p class="desc">Tarun Tejpal: Powerful and pioneering journalist</p>
+          <a class="read-more" href="https://www.bbc.com/news/world-asia-india-25116203">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 56 -->
+      <div class="card" style="background-image:url('https://imgk.timesnownews.com/story/1551865054-Indian_Army_BCCL_5.jpg?tr=w-600,h-450,fo-auto');">
+        <div class="card-content">
+          <p class="desc">Rajasthan: Army Major files sexual harassment case against a Brigadier</p>
+          <a class="read-more" href="https://www.timesnownews.com/india/article/army-major-files-sexual-harassment-case-against-a-brigadier/377680">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 57 -->
+      <div class="card" style="background-image:url('https://images.financialexpressdigital.com/2018/10/Rape-1.jpg?w=1024');">
+        <div class="card-content">
+          <p class="desc">Child sexual abuse: Time no bar, Centre says victim can file complaint at any age</p>
+          <a class="read-more" href="http://financialexpress.com/india-news/child-sexual-abuse-time-no-bar-centre-says-victim-can-file-complaint-at-any-age/1352192/">Read More</a>
+        </div>
+      </div>
+
+    <!-- Article 58 -->
+      <div class="card" style="background-image:url('https://tse2.mm.bing.net/th/id/OIP._UEs5YmZ7UPL1uKulUDfgAHaEK?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Sexual harassment case jolts Nahan medical college</p>
+          <a class="read-more" href="https://www.tribuneindia.com/news/himachal/sexual-harassment-case-jolts-nahan-medical-college/">Read More</a>
+        </div>
+      </div>
+
+         <!-- Article 59 -->
+      <div class="card" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.USM3MYAJiJh_sBlONY4ZWAHaEK?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Rapido driver harassed my girlfriend</p>
+          <a class="read-more" href="https://www.reddit.com/r/bangalore/comments/1ndj3lc/rapido_driver_harassed_my_girlfriend/">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 60 -->
+      <div class="card" style="background-image:url('https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0119%2Fr1119630_1296x729_16%2D9.jpg&w=920&h=518&scale=crop&cquality=80&location=origin&format=jpg');">
+        <div class="card-content">
+          <p class="desc">Wrestlers protest to Ambrose suspension: Indian sport records 5 sexual harassment cases in last 9 months</p>
+          <a class="read-more" href="https://www.espn.in/espn/story/_/id/35478938/wrestlers-protest-5-sexual-harassment-cases-last-9-months-indian-sport">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 61 -->
+      <div class="card" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.3O2VXMELM4CIb0w8CJ69CgHaEK?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Man Rapes Woman, Shoots Video To Blackmail Her In Lucknow, Arrested: Cops</p>
+          <a class="read-more" href="https://www.ndtv.com/india-news/man-rapes-woman-shoots-video-to-blackmail-her-in-lucknow-arrested-cops-8850116">Read More</a>
+        </div>
+      </div>
+
+    <!-- Article 62 -->
+      <div class="card" style="background-image:url('https://tse1.mm.bing.net/th/id/OIP.LFInTqvwaupWNfS-hxu4pgHaEH?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Woman Duped Of Rs 1.11 lakh Over Sextortion Threat In Maharashtra's Thane</p>
+          <a class="read-more" href="https://www.ndtv.com/cities/maharashtra-extortion-news-latest-woman-duped-of-rs-1-11-lakh-over-sextortion-threat-in-maharashtras-thane-8914734">Read More</a>
+        </div>
+      </div>
+      
+    <!-- Article 63 -->
+      <div class="card" style="background-image:url('https://c.ndtvimg.com/2023-12/454coak8_bhopal-police_625x300_07_December_23.jpeg?im=FeatureCrop,algorithm=dnn,width=773,height=435');">
+        <div class="card-content">
+          <p class="desc">Forced Conversion, Rape, Blackmail: What Probe Team Found In Bhopal Case</p>
+          <a class="read-more" href="https://www.ndtv.com/india-news/forced-conversion-rape-blackmail-what-probe-team-found-in-bhopal-case-8472176">Read More</a>
+        </div>
+      </div>
+
+    <!-- Article 64 -->
+      <div class="card" style="background-image:url('https://tse2.mm.bing.net/th/id/OIP.SXBSkkZL6rgk_CwNfKwKyQHaEy?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">DMK, AIADMK's 'Hang Your Head In Shame' Barbs Over Pollachi Sex Assault Case</p>
+          <a class="read-more" href="https://www.ndtv.com/india-news/pollachi-sex-assault-case-verdict-nine-men-sentenced-life-imprisonment-mk-stalin-dmk-eps-aiadmk-hang-your-head-in-shame-8404233">Read More</a>
+        </div>
+      </div>
+  
+    <!-- Article 65-->
+      <div class="card" style="background-image:url('https://tse3.mm.bing.net/th/id/OIP.sAQFiYIq-9-2ieBK_9SstAAAAA?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">NDTV Explains | 9 Men, 8 Rape Survivors. The Pollachi Sex Assault Case</p>
+          <a class="read-more" href="https://www.ndtv.com/india-news/pollachi-sex-assault-case-news-pollachi-rape-case-accused-sentenced-to-life-term-9-men-8-rape-survivors-in-pollachi-sex-assault-case-8401612">Read More</a>
+        </div>
+      </div>
+
+    <!-- Article 66 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1IBwmY.img?w=612&h=344&m=6');">
+        <div class="card-content">
+          <p class="desc">Balasore sexual harassment case: Principal arrested after Odisha girl immolation</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/other/balasore-sexual-harassment-case-principal-arrested-after-odisha-girl-immolation/ar-AA1IByDe">Read More</a>
+        </div>
+      </div>
+   
+
+
+    </div>
+  </div>
+</body>
+</html>

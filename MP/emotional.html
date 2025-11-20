@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emotional Violence Articles</title>
+  <style>
+    :root{
+      --card-height:220px;
+      --overlay: rgba(0,0,0,0.55);
+      --accent: rgba(255,255,255,0.18);
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    header{
+      background: rgba(0,0,0,0.75);
+      padding:18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    header h1{ margin:0; font-size:20px; letter-spacing:0.3px; }
+
+    .wrap{
+      max-width:1400px;
+      margin:26px auto;
+      padding:0 18px 60px;
+    }
+
+    .articles{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+      grid-template-rows: 230px;
+      gap:20px;
+    }
+
+    .card{
+      height:var(--card-height);
+      border-radius:14px;
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      align-items:flex-end;
+      padding:16px;
+      color:#fff;
+      box-shadow:0 8px 20px rgba(0,0,0,0.45);
+      transition:transform .25s ease, box-shadow .25s ease;
+      background-size:cover;
+      background-position:center;
+    }
+    .card:hover{ transform:translateY(-6px); box-shadow:0 14px 30px rgba(0,0,0,0.55); }
+
+    .card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:var(--overlay);
+      z-index:0;
+    }
+
+    .card-content{
+      position:relative;
+      z-index:1;
+      width:100%;
+    }
+
+    .desc{
+      margin:0 0 10px 0;
+      font-size:14px;
+      line-height:1.4;
+      display:-webkit-box;
+      -webkit-line-clamp:3;
+      -webkit-box-orient:vertical;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .read-more{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:8px;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      font-size:13px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+    .read-more:hover{ background:rgba(255,255,255,0.28); }
+
+    @media (max-width:520px){
+      header h1{ font-size:18px }
+      .desc{ font-size:13px }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Emotional Violence Articles</h1>
+  </header>
+
+  <div class="wrap">
+    <div class="articles">
+
+      <!-- Article 1 -->
+      <div class="card" style="background-image:url('https://tse2.mm.bing.net/th/id/OIP.zlM0ICNmmtoc_Lxotg4G-QHaFE?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Prevalence and determinants of emotional violence faced by married women in Delhi, India: A cross-sectional study</p>
+          <a class="read-more" href="https://share.google/HRozgtteRRsnPq2P9" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 2 -->
+      <div class="card" style="background-image:url('https://tse2.mm.bing.net/th/id/OIP.0rBG7Q4Z4P-MgF581kvr5gHaDm?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">Children with mothers suffering from domestic violence prone to mental health issues, study says</p>
+          <a class="read-more" href="https://www.thehindu.com/sci-tech/science/children-with-mothers-suffering-from-domestic-violence-prone-to-mental-health-issues-study-says/article69637290.ece#amp_tf=From%20%251%24s&aoh=17575839393813&referrer=https%3A%2F%2Fwww.google.com&ampshare=https%3A%2F%2Fwww.thehindu.com%2Fsci-tech%2Fscience%2Fchildren-with-mothers-suffering-from-domestic-violence-prone-to-mental-health-issues-study-says%2Farticle69637290.ece" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 3 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1Mlu98.img?w=768&h=472&m=6&x=502&y=145&s=203&d=203');">
+        <div class="card-content">
+          <p class="desc">Maharashtra Woman Dies By Suicide Over Dowry Harassment Months After Marriage</p>
+          <a class="read-more" href="https://www.msn.com/en-in/family-and-relationships/marriage/maharashtra-woman-dies-by-suicide-over-dowry-harassment-months-after-marriage/ar-AA1MlDPW?ocid=BingNewsVerp" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 4 -->
+      <div class="card" style="background-image:url('https://img.republicworld.com/all_images/another-dowry-horror-in-bengaluru-28-year-old-woman-dies-by-suicide-husband-arrested-1756898036801-16_9.webp?w=1280&h=720&q=75&format=webp');">
+        <div class="card-content">
+          <p class="desc">Another Dowry Horror in Bengaluru: 28-Year-Old Woman Dies by Suicide, Husband Arrested</p>
+          <a class="read-more" href="https://www.republicworld.com/india/another-dowry-horror-in-bengaluru-28-year-old-woman-dies-by-suicide-husband-arrested" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 5 -->
+      <div class="card" style="background-image:url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1LUHMr.img?w=550&h=309&m=6');">
+        <div class="card-content">
+          <p class="desc">Greater Noida: 22-yr-old held over filming, blackmailing woman</p>
+          <a class="read-more" href="https://www.msn.com/en-in/news/India/greater-noida-22-yr-old-held-over-filming-blackmailing-woman/ar-AA1LUW9g?ocid=BingNewsVerp" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 6 -->
+      <div class="card" style="background-image:url('https://media.newindianexpress.com/newindianexpress%2F2025-08-21%2Felcjds2y%2Fjkjjjjj.JPG?rect=4%2C0%2C674%2C379&w=1024&auto=format%2Ccompress&fit=max');">
+        <div class="card-content">
+          <p class="desc">Ghaziabad woman alleges dowry harassment, pressure to maintain body like Bollywood actor Nora Fatehi</p>
+          <a class="read-more" href="https://www.newindianexpress.com/nation/2025/Aug/21/ghaziabad-woman-alleges-dowry-harassment-pressure-to-maintain-body-like-bollywood-actor-nora-fatehi" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 7 -->
+      <div class="card" style="background-image:url('https://tse3.mm.bing.net/th/id/OIP.ecHwarQgs-q_tRz1vRpcAgHaE8?pid=Api&P=0&h=180');">
+        <div class="card-content">
+          <p class="desc">KIIT Nepali student suicide case: Father alleges harassment and emotional blackmail behind tragedy</p>
+          <a class="read-more" href="https://economictimes.indiatimes.com/news/india/kiit-nepali-student-suicide-case-father-alleges-harassment-and-emotional-blackmail-behind-tragedy/articleshow/118358939.cms?from=mdr" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 8 -->
+      <div class="card" style="background-image:url('https://static.toiimg.com/thumb/msid-117593867,imgsize-369517,width-400,height-225,resizemode-72/Representative-Image.jpg');">
+        <div class="card-content">
+          <p class="desc">Woman alleges torture by husband in laws over dowry</p>
+          <a class="read-more" href="https://timesofindia.indiatimes.com/city/thiruvananthapuram/woman-alleges-torture-by-husband-in-laws-over-dowry/articleshow/120628588.cms?utm_source=chatgpt.com" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 9 -->
+      <div class="card" style="background-image:url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/202208/Kerala_HC_Small_1200x768.jpeg?VersionId=wPYZ3WzDLoLghWrL7rdhSBZjLaIQ5lbu&size=690:388');">
+        <div class="card-content">
+          <p class="desc">Comparing wife to other women is mental torture, says Kerala High Court</p>
+          <a class="read-more" href="https://www.indiatoday.in/law/story/kerala-hc-says-comparing-wife-to-other-women-mental-torture-1989050-2022-08-17?utm_source=chatgpt.com" target="_blank">Read More</a>
+        </div>
+      </div>
+    
+       <!-- Article 10 -->
+      <div class="card" style="background-image:url('https://static.toiimg.com/thumb/msid-47529300,imgsize-110164,width-400,resizemode-4/47529300.jpg');">
+        <div class="card-content">
+          <p class="desc">Mental torture can amount to cruelty: SC</p>
+          <a class="read-more" href="https://timesofindia.indiatimes.com/india/mental-torture-can-amount-to-cruelty-sc/articleshow/2061186781.cms?utm_source=chatgpt.com" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 11 -->
+      <div class="card" style="background-image:url('https://c.ndtvimg.com/2022-10/12dl9tvg_old-woman-generic_625x300_21_October_22.jpg?downsize=773:435');">
+        <div class="card-content">
+          <p class="desc">Kerala Woman Tortured Mother-In-Law Physically, Mentally For 4 Years: Cops</p>
+          <a class="read-more" href="https://www.ndtv.com/india-news/kerala-woman-tortured-mother-in-law-physically-mentally-for-4-years-cops-3453400?utm_source=chatgpt.com" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 12 -->
+      <div class="card" style="background-image:url('https://static.toiimg.com/thumb/msid-117681040,imgsize-94504,width-400,height-225,resizemode-72/117681040.jpg');">
+        <div class="card-content">
+          <p class="desc">HC: Baseless allegations on wife's character amount to mental cruelty</p>
+          <a class="read-more" href="https://timesofindia.indiatimes.com/city/raipur/hc-baseless-allegations-on-wifes-character-amount-to-mental-cruelty/articleshow/122135119.cms?utm_source=chatgpt.com" target="_blank">Read More</a>
+        </div>
+      </div>
+
+       <!-- Article 13 -->
+      <div class="card" style="background-image:url('https://www.livelaw.in/h-upload/2022/04/30/750x450_416331-justice-s-srimathy-madurai-bench.jpg');">
+        <div class="card-content">
+          <p class="desc">Wife Threatening To Commit Suicide, Filing False Dowry Harassment Case Would Amount To Mental Cruelty: Madras High Court</p>
+          <a class="read-more" href="https://www.livelaw.in/high-court/madras-high-court/madras-high-court-mental-cruelty-threatening-to-commit-suicide-filing-false-dowry-case-270830?utm_source=chatgpt.com" target="_blank">Read More</a>
+        </div>
+      </div>
+      
+       <!-- Article 14 -->
+      <div class="card" style="background-image:url('https://c.ndtvimg.com/2025-03/rvhchll_chhattisgarh-high-court_625x300_18_March_25.jpeg?im=FeatureCrop,algorithm=dnn,width=773,height=435');">
+        <div class="card-content">
+          <p class="desc">Taunting Jobless Husband Is "Mental Cruelty": Chhattisgarh High Court Grants Divorce</p>
+          <a class="read-more" href="https://www.ndtv.com/india-news/taunting-jobless-husband-is-mental-cruelty-chhattisgarh-high-court-grants-divorce-9153740?utm_source=chatgpt.com" target="_blank">Read More</a>
+        </div>
+      </div>
+       
+       <!-- Article 15 -->
+      <div class="card" style="background-image:url('https://www.verdictum.in/h-upload/2025/02/10/1500x900_1688309-gujarat-hc-justice-sanjeev-j-thaker.webp');">
+        <div class="card-content">
+          <p class="desc">Suicide Attempt & Publicly Defaming Husband Is Mental Cruelty: Gujarat High Court Dismisses Wife’s Plea For Restitution Of Conjugal Rights</p>
+          <a class="read-more" href="https://www.verdictum.in/court-updates/high-courts/gujarat-high-court/2025gujhc26861-suicide-attempt-mental-cruelty-1577455?utm_source=chatgpt.com" target="_blank">Read More</a>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</body>
+</html>
